@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ununtu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    volumes:
+#      - './:/dudoser'
+    command: ./start.sh
+    working_dir: /dudoser
